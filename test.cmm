@@ -1,0 +1,58 @@
+int func (int a) {
+    int b;
+    cout << "Inside new function";
+    cout << "\n";
+    b = 10;
+    a = a - 3;
+    
+    if (a >= 3) {
+	a++;
+    } else {
+	a--;
+    }
+    
+    a = a + b;
+    return a;
+}
+
+int whilefunc() {
+    int i;
+    bool c;
+    i = 0;
+    c = true;
+    while(i < 10) {
+	i++;
+    }
+    
+    if (c) {
+	i++;
+    }
+    
+    return i;
+
+
+}
+
+void main() {
+    int a;
+    int wret;
+    cout << "Hello world!\n";
+    a = 5;
+    a--;
+    a++;
+    cout << a;
+    cout << "\n";
+    a = func(a);
+    cout << a;
+    cout << "\n";
+    wret = whilefunc();
+    cout << wret;
+    cout << "\n";
+    
+    // User input
+    cout << "Enter a number: ";
+    cin >> a;
+    cout << "user entered: ";
+    cout << a;
+    cout << "\n";
+}
